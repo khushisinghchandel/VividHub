@@ -1,0 +1,116 @@
+/* VideoMeet.module.css */
+
+/* VideoMeet.module.css */
+.chattingArea {
+    display: flex;
+    gap: 10px; /* or use margin on specific element instead */
+    margin-top: 1rem; /* optional for spacing from above */
+    align-items: center;
+  }
+  
+/* This is your chat container */
+.chatContainer {
+    background-color: white;
+    color: black; /* sets all text to black */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* Input field inside chat */
+  .chatContainer input,
+  .chatContainer textarea {
+    color: black !important;
+    border: 3px solid black;
+    
+  }
+  
+  /* Placeholder text */
+  .chatContainer input::placeholder,
+  .chatContainer textarea::placeholder {
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  /* Optional: styling for chat bubbles or message display */
+  .chattingDisplay {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 1rem;
+  }
+  
+  
+  
+
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background: black;
+
+}
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 10vh;
+    height: 20vh;
+    width: auto;
+    left: 0;
+    border-radius: 20px;
+}
+
+
+.MuiBadge-badge {
+    background-color: orange !important;
+    color: white !important;
+}
+
+
+.buttonContainers {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    color: white !important
+}
+
+.buttonContainers svg {
+    font-size: 3rem;
+}
+
+.conferenceView { 
+
+    display: flex;
+    
+    padding: 10px;
+    gap: 10px;
+}
+
+.conferenceView  video {
+    width: 40vw;
+    height: 20vh;
+    min-width: 30vw;
+    border-radius: 10px;
+}
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    z-index: 1001;
+    width: 30vw;
+    padding-inline: 20px;
+    max-width: 30vw; /* Prevent it from expanding */
+    overflow-y: auto; /* Enable only vertical scroll */
+}
+
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+}
